@@ -7,7 +7,7 @@ body{
 }
 
 nav{
-	overflow: auto;
+	/*overflow: auto;*/
 	padding-bottom: 15px;
 	border-bottom: solid 1px  #934838;
 }
@@ -17,6 +17,7 @@ h1{
     font-size: 33px;
     font-weight: bold;
     text-align: left;
+    padding-top: 10px;
 }
 
 section{
@@ -38,7 +39,7 @@ h2{
 .learn-more{
     font-family: 'Quicksand', sans-serif;
     text-decoration: none;
-    color: #0077be;
+    color: #0077be !important;
     font-size: 13px;
     font-weight: bold;
 }
@@ -92,14 +93,14 @@ a h3{
 }
 
 /** Blog **/
-ul li{
+#almendra-blog ul li{
 	height: 70px;
 	text-align: left;
 	flex-direction: row;
 	align-items: center;
 }
 
-ul li:hover{
+#almendra-blog ul li:hover{
 	opacity: 0.7;
 }
 
@@ -127,14 +128,14 @@ ul li:hover{
 }
 
 
-.icon {
+.f-icon {
   fill: currentColor;
   color: inherit;
   width: auto;
   height: auto;
 }
 
-.icon {
+.f-icon {
   width: 3rem;
   margin: 10px;
   color: rgba(#000,0.4);
@@ -206,4 +207,133 @@ p a:hover{
 
 footer a:hover{
 	color: #F8F8F8;
+}
+
+
+/* NAV */
+
+nav {
+      position: relative;
+      width: 100%;
+      height: 80px; 
+      top: 0;
+    }
+
+nav ul {
+  padding: 15px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav ul li a {
+  padding: 10px 0;
+  color: #fdfbfb;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+
+  font: 17px/1 'Bai Jamjuree', sans-serif;
+}
+nav ul li a:hover {
+  color: #008CBA;
+  text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  color: #fdfbfb;
+}
+
+a.active {
+  border-bottom: 2px solid #008CBA;
+  color: #fdfbfb;
+}
+
+.main-nav {
+  position: relative; 
+  overflow: hidden;
+}
+.main-nav {
+  height: 60px;
+  z-index: 150;
+}
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.main-nav ul li a.icon{
+	display: none;
+}
+
+   nav ul {
+      float: right;
+      padding-top: 15px;
+    }
+
+    nav ul li a{
+      font-size: 16px;
+    }
+
+nav ul{
+	padding-right: 0px;
+}
+
+.main-nav{
+	padding-right: 0px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .main-nav{
+  	/*display: inline-table;*/
+}
+
+.main-nav ul li a{
+	display: none;
+	overflow: hidden;
+}
+
+.main-nav ul li a.icon{
+	float: right;
+	display: block;
+}
+
+nav ul{
+	padding: 7px 0px 0px 0px;
+	width: 100%;
+	position: absolute;
+}
+
+nav ul li{
+	display: block;
+	margin: 0px;
+	background-color: #1B1B1B;
+}
+
+.main-nav.responsive {
+	position: relative;
+	display: table;
+	height: 200px;
+}
+
+.main-nav.responsive .icon {
+	position: absolute;
+    right: 0;
+    top: 0;
+ }
+
+ .main-nav.responsive a {
+ 	float: none;
+    display: block;
+    text-align: left;
+  }
 }
