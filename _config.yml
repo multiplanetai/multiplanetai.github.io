@@ -1,0 +1,25 @@
+
+# Site settings 
+
+title: Initiative Almendra
+tagline: Research
+description: Building AI for multiplanetary life
+
+url: "https://initiativealmendra.github.io"
+
+author:
+  name: "Alberto Gaona"
+  email: "albertoo_3c@hotmail.com"
+  instagram: "betogaona7"
+  github: "betogaona7"
+  linkedin: "betogaona7"
+  facebook: "betogaona07"
+
+markdown: kramdown
+encoding: UTF-8
+future: true
+
+disqus: "https-betogaona7-github-io-blog"
+fid: "2010447859198340"
+
+permalink: /:categories/:year/:month/:day/:title

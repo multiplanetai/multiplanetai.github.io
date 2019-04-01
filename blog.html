@@ -1,0 +1,18 @@
+---
+layout: default
+title: Almendra | Blog
+limit: 10
+---
+<section id=almendra-blog>
+	<h2> Recent posts </h2>
+		<ul>
+			{% for post in site.categories.blog reversed limit: page.limit %}
+			<a href="{{ post.url }}" >
+				<li>
+					<p class="r-post-title"> {{ post.title }}</p>
+					<p class="r-post-date">{{ post.date | date: '%B %d, %Y' }} </p>
+				</li>
+			</a>
+			{% endfor %}
+		</ul>
+</section>

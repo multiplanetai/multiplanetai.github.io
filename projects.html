@@ -1,0 +1,31 @@
+---
+layout: default
+
+title: "Almendra | Projects"
+limit: 12
+---
+
+<section id="almendra-projects">
+	<h2> Recent projects </h2>
+	<div class="container">
+		{% for project in site.categories.projects reversed limit: page.limit %}
+			{% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
+			{% if modulo == '1' %}
+			<div class="row">
+			{% endif %}
+			<div class="col-sm-4">
+				<a href="{{ project.url }}">
+					<figure>
+						<h3>{{ project.title }}</h3> 
+						<img src="{{ project.image }}" >
+					</figure>
+				</a>
+				<br>
+				<br>
+			</div>
+			{% if modulo == '0' or forloop.last %}
+			</div>
+			{% endif %}
+		{% endfor %}
+	</div>
+</section>
