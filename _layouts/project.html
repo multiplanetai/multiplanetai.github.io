@@ -1,0 +1,112 @@
+---
+layout: default 
+---
+
+<style type="text/css">
+
+	#almendra-project h1, h2{
+		font-family: 'Bai Jamjuree', sans-serif;
+		text-align: center !important;
+		padding-bottom: 0px;
+	}
+
+	#almendra-project p{
+		padding: 0 10% 20px 10%;
+		text-align: justify;
+		font: 15px/1.4 'Montserrat', sans-serif;
+	}
+
+	#almendra-project a{
+		color: #008CBA;
+
+	}
+
+	#almendra-project ul{
+		padding: 0px 10% 20px 10%;
+		font: 15px/1.4 'Montserrat', sans-serif;
+		list-style: inside;
+	}
+
+	#almendra-project p strong{
+		font-weight: bold;
+	}
+
+	#almendra-project p em{
+		background-color: #33332F;
+	}
+
+	#almendra-project p img{
+		display: block;
+		margin: auto;
+		max-width: 350px;
+		max-height: 400px;
+	}
+
+	.post-comments{
+		padding: 0 10%;
+
+	}
+
+	.project_link{
+		color: #F8F8F8 !important;
+		font-size: 12px;
+		border-radius: 10%;
+		border: 1px solid #b1992c; 
+		padding: 2px 2px; 
+	}
+
+	.status{
+		padding: 10px 0px 0px 0px !important;
+		text-align: center !important;
+	}
+
+
+	@media screen and (max-width: 600px) {
+		#almendra-project h1{
+			font-size: 25px;
+		}
+
+		#almendra-project h2{
+			font-size: 13px;
+		}
+
+		#almendra-project p{
+			font-size: 13px;
+			padding: 0px 3% 20px 3%;
+		}
+
+		#almendra-project ul{
+			padding: 0px 3% 20px 3%;
+			font-size: 13px;
+		}
+	}
+
+
+</style>
+
+<section id="almendra-project">
+	<br>
+	<br>
+	<h1>{{ page.title }} </h1>
+	
+	{% if page.status == "active" %}
+	<p class="status"><a href="{{ page.code }}" target="_blank" rel="noopener" class="project_link" style="background-color: #008CBA;"> {{ page.status }} | code </a> </p>
+	{% elsif page.status == "finished" %}
+	<p class="status"><a href="{{ page.code }}" target="_blank" rel="noopener" class="project_link" style="background-color: #934838;"> {{ page.status }} | code </a> </p>
+	{% endif  %}
+
+	<h2>{{ page.date | date_to_string }}</h2>
+	
+	<br>
+	<br>
+	<p>{{ content }}</p>
+</section>
+
+<script type="text/javascript">
+  var links = document.querySelectorAll( '#almendra-project a' );  
+    for (var i = 0, length = links.length; i < length; i++) {  
+        if (links[i].hostname != window.location.hostname) {
+            links[i].target = '_blank';
+        }
+    }
+</script>
