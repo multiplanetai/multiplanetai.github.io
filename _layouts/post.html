@@ -1,0 +1,114 @@
+---
+layout: default 
+---
+
+<style type="text/css">
+
+	#almendra-post h1, h2{
+		font-family: 'Bai Jamjuree', sans-serif;
+		text-align: center !important;
+		padding-bottom: 0px;
+	}
+
+	#almendra-post p{
+		padding: 0 10% 20px 10%;
+		text-align: justify;
+		font: 15px/1.4 'Montserrat', sans-serif;
+	}
+
+	#almendra-post a{
+		color: #008CBA;
+
+	}
+
+	#almendra-post ul{
+		padding: 0px 10% 20px 10%;
+		font: 15px/1.4 'Montserrat', sans-serif;
+		list-style: inside;
+	}
+
+	#almendra-post p strong{
+		font-weight: bold;
+	}
+
+	#almendra-post p em{
+		background-color: #33332F;
+	}
+
+	#almendra-post p img{
+		display: block;
+		margin: auto;
+		max-width: 350px;
+		max-height: 400px;
+	}
+
+	.post-comments{
+		padding: 0 10%;
+
+	}
+
+
+	@media screen and (max-width: 600px) {
+		#almendra-post h1{
+			font-size: 25px;
+		}
+
+		#almendra-post h2{
+			font-size: 13px;
+		}
+
+		#almendra-post p{
+			font-size: 13px;
+			padding: 0px 3% 20px 3%;
+		}
+
+		#almendra-post ul{
+			padding: 0px 3% 20px 3%;
+			font-size: 13px;
+		}
+
+		.post-comments{
+			padding: 0 3%;
+		}
+	}
+
+
+</style>
+
+<section id="almendra-post">
+	<br>
+	<br>
+	<h1>{{ page.title }}</h1>
+	<h2>{{ page.date | date_to_string }}</h2>
+	<br>
+	<br>
+	<p>{{ content }}</p>
+
+	{% if page.comments %}
+	<div class="post-comments">
+	    <div id="disqus_thread"></div>
+	    	<script>        
+		    	/*var disqus_config = function () {
+		          this.page.url = {{ page.url }};  
+		          this.page.identifier = {{ page.title }} 
+		        };*/
+		        (function() { 
+		          var d = document, s = d.createElement('script');
+		          s.src = 'https://https-betogaona7-github-io-blog.disqus.com/embed.js';
+		          s.setAttribute('data-timestamp', +new Date());
+		          (d.head || d.body).appendChild(s);
+		        })();
+	      	</script>
+	      	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	  	{% endif %}
+	 </div>
+</section>
+
+<script type="text/javascript">
+  var links = document.querySelectorAll( '#almendra-post a' );  
+    for (var i = 0, length = links.length; i < length; i++) {  
+        if (links[i].hostname != window.location.hostname) {
+            links[i].target = '_blank';
+        }
+    }
+</script>
