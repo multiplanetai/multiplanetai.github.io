@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 
 title: "HS - Dense classification"
 description: "How a hairstyle visualizer can change the world"

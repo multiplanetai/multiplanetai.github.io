@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 
 title: "IW - Seamless cloning"
 description: "How a hairstyle visualizer can change the world"
@@ -24,4 +24,4 @@ The intensity of the resulting image in the masked region is not the same as the
 The intensity of the resulting image at the boundary of the masked region is the same as the intensity of the destination image.  
 
 
-![Face aligment](../../../../img-posts/hairstyle/iw-seamless-cloning.png)
+![Face aligment](../../../../postimgs/iw-seamless-cloning.png)

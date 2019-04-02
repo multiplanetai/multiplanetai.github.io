@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 
 title: "ED - Encoder-Decoder model"
 description: "How a hairstyle visualizer can change the world"
@@ -23,6 +23,6 @@ During the training phase, the both networks are treated separately. The decoder
 
 The following image shows how DeepFakes works:
 
-![Deep Fakes](../../../../img-posts/hairstyle/deepfakes.png)
+![Deep Fakes](../../../../postimgs/hairstyle/deepfakes.png)
 
 I was going to write about how to develop an architecture to perform face swap in the best way possible, but I found a [blog post](https://www.alanzucconi.com/2018/03/14/create-perfect-deepfakes/) written by Alan Zucconi that explains all that very well, so I omit that part.

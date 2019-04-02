@@ -1,3 +1,3 @@
-# Inititative Almendra
+# Initiative Almendra
 
 Official website

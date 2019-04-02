@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 
 title: "IW - Convex hull, Delaunay triangulation, and Affine warp"
 description: "How a hairstyle visualizer can change the world"
@@ -20,5 +20,5 @@ Triangulation refers to the subdivision of the plane into triangles with the poi
 Then, we consider the triangles between the source face and the target face, and affine warp the source face triangle onto the target face. An affine transform is the simples way to transform a set of three points to another set of arbitrary three points. It encodes translation, scale, rotation, and shear. We create a triangular mask by filling pixels inside the output triangle with white. This mask, when multiplied with the output image, turns all pixels outside the triangle black while preserving the color of all pixels inside the triangle. We use the mask to swap it into the target face, but the result hardly will look natural (because of lighting and skin tone differences between images)...
 
 
-![Face aligment](../../../../img-posts/hairstyle/iw-face-aligment.png)
+![Face aligment](../../../../postimgs/iw-face-aligment.png)
 

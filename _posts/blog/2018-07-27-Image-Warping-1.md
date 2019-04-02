@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 
 title: "IW - Facial landmark detection "
 description: "How a hairstyle visualizer can change the world"
