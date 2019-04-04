@@ -6,9 +6,10 @@ limit: 12
 ---
 
 <section id="almendra-projects">
-	<h2> Recent projects </h2>
+	<h2> Projects </h2>
+	<br>
 	<div class="container">
-		{% for project in site.categories.projects reversed limit: page.limit %}
+		{% for project in site.categories.projects limit: page.limit %}
 			{% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
 			{% if modulo == '1' %}
 			<div class="row">
