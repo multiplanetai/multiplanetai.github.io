@@ -10,7 +10,7 @@ rlimit: 3
 
 <section id="almendra-mission">
 	<h2> Mission </h2>
-	<p class="almendra-mission-br"> Building and proposing artificial intelligence applications for a multiplanetary life. </p>
+	<p class="almendra-mission-br"> Relieving multiplanetary-life hurdles using artificial intelligence. </p>
 	<a class="learn-more" href="./about.html"> LEARN MORE > </a>
 </section>
 
@@ -18,7 +18,7 @@ rlimit: 3
 	<h2> Recent projects </h2>
 	<div class="container">
 		<div class="row">
-			{% for project in site.categories.projects reversed limit: page.plimit %}
+			{% for project in site.categories.projects limit: page.plimit %}
 			<div class="col-sm-4">
 				<a href="{{ project.url }}">
 					<figure>
@@ -39,7 +39,7 @@ rlimit: 3
 	<h2> Recent posts </h2>
 	<br/>
 	<ul>
-		{% for post in site.categories.blog reversed limit: page.blimit  %}
+		{% for post in site.categories.blog limit: page.blimit  %}
 		<a href="{{ post.url }}" >
 			<li>
 				<p class="r-post-title"> {{ post.title }}</p>
@@ -93,8 +93,10 @@ rlimit: 3
 </section>
 
 <section id="almendra-join">
-	<h2> Join Almendra </h2>
-	<p class="almendra-join-m"> All projects are open source, so if you want you could contribute on <a class="important-link" href="https://github.com/initiativealmendra">GitHub</a>, but if you are more interested in proposing new projects, write blog posts, or share learning resources, please don't hesitate to send an email to <a class="important-link" href="mailto:albertoo_3c@hotmail.com" >albertoo_3c@hotmail.com </a> to discuss them. </p>
+	<h2> Join us </h2>
+	<p class="almendra-join-m"> 
+		Almendra is an open research organization meaning that you can directly contribute using <a class="important-link" href="https://github.com/initiativealmendra">GitHub</a>, but if you are interested in collaborating in a different way, like creating new resources, submitting new projects, writing blog posts, or suggesting new things, then don't hesitate to send an email to <a class="important-link" href="mailto:initiativealmendra@hotmail.com"> initiativealmendra@gmail.com</a>. 
+	</p>
 </section>
 
 
