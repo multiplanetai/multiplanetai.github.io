@@ -1,0 +1,19 @@
+- name: Artificial intelligence projects from Udacity using Python 
+  url: https://github.com/betogaona7/AIND-projects
+
+- name: Solutions of competitive programming problems using C++
+  url: https://github.com/betogaona7/CompetitiveProgramming
+
+- name: Computer vision algorithms on Jupyter notebooks
+  url: https://github.com/betogaona7/computer_vision
+
+- name: Melanoma detector model using Pytorch
+  url: https://github.com/betogaona7/dermatologist-AI
+
+- name: Fully convolutional networks implementation on Pytorch
+  url: https://github.com/betogaona7/FCN
+
+- name: Automatic hair segmentation using a U-net architecture
+  ulr: https://github.com/betogaona7/hairstyle
+
+  

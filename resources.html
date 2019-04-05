@@ -3,4 +3,67 @@ layout: default
 title: Almendra | Resources
 ---
 
+<section id="almendra-resources-posts" >
+	<h2> Technical articles </h2>
+	<br>
+	<ul>
+		{% for post in site.categories.resources %}
+		<a href="{{ post.url }}" >
+			<li>
+				<p class="r-post-title"> {{ post.title }}</p>
+				<p class="r-post-date">{{ post.date | date: '%B %d, %Y' }} </p>
+			</li>
+		</a>
+		{% endfor %}
+	</ul>
+</section>
 
+<section id="almendra-resources-code">
+	<h2> Open code </h2>
+	<br>
+	<ul>
+		{% for link in site.data.codeurls %}
+		<a href="{{ link.url }}" target="_blank" rel="noopener">
+			<li>
+				<p class="r-post-title"> {{ link.name }}</p>
+			</li>
+		</a>
+		{% endfor %}
+	</ul>
+</section>
+
+<section id="almendra-resources-videos">
+	<h2> Teaching videos </h2>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 text-center">
+				<a href="">
+					<figure>
+						<img src="./imgs/r-concepts.png" >
+					</figure>
+				</a>
+				<br>
+				<br>
+			</div>
+			<div class="col-sm-4 text-center">
+				<a href="">
+					<figure>
+						<img src="./imgs/r-architectures.png" >
+					</figure>
+				</a>
+				<br>
+				<br>
+			</div>
+			<div class="col-sm-4 text-center">
+				<a href="">
+					<figure>
+						<img src="./imgs/r-random.png" >
+					</figure>
+				</a>
+				<br>
+				<br>
+			</div>
+		</div>
+	</div>
+</section>

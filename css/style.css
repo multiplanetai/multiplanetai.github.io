@@ -291,7 +291,30 @@ nav ul{
 	padding-right: 0px;
 }
 
+#almendra-resources-posts ul li{
+  height: 70px;
+  text-align: left;
+  flex-direction: row;
+  align-items: center;
+}
 
+#almendra-resources-code ul li{
+  height: 40px;
+  align-items: center;
+}
+
+#almendra-resources-code ul li:hover{
+  opacity: 0.7;
+}
+
+#almendra-resources-posts ul li:hover{
+  opacity: 0.7;
+}
+
+#almendra-resources-videos figure{
+  width: 65%;
+  display: inline-block;
+}
 
 @media screen and (max-width: 600px) {
 
@@ -341,5 +364,13 @@ nav ul{
 
   .main-nav.responsive ul{
     z-index: 100;
+  }
+
+   #almendra-resources-videos figure{
+    width: 85%;
+  }
+
+  #almendra-resources-code ul li{
+    height: 60px;
   }
 }

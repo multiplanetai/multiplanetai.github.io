@@ -5,7 +5,8 @@ title: "Almendra"
 
 plimit: 3
 blimit: 5
-rlimit: 3
+r-plimit: 3
+r-climit: 4
 ---
 
 <section id="almendra-mission">
@@ -55,40 +56,31 @@ rlimit: 3
 	<h2> Recent uploads </h2>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-4">
-				<a href="">
-					<figure>
-						<h3>Learn how to code a localization system for the moon.</h3> 
-						<!-- <img src="./imgs/test18.jpg" > -->
-						<iframe  width="100%" height= "250px" src="https://www.youtube.com/embed/XFzuUwiL85U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</figure>
-				</a>
-				<br>
-				<br>
+			<div class="col-sm-6" id="almendra-resources-code">
+				<ul>
+					{% for link in site.data.codeurls limit: page.r-climit %}
+					<a href="{{ link.url }}" target="_blank" rel="noopener">
+						<li>
+							<p class="r-post-title"> {{ link.name }}</p>
+						</li>
+					</a>
+					{% endfor %}
+				</ul>
 			</div>
-			<div class="col-sm-4">
-				<a href="">
-					<figure>
-						<h3>Implemenation code of a generative model using C++.</h3> 
-						<!--<img src="./imgs/test17.jpg" > -->
-						<iframe  width="100%" height= "250px" src="https://www.youtube.com/embed/Bav1DzAnitc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</figure>
-				</a>
-				<br>
-				<br>
-			</div>
-			<div class="col-sm-4">
-				<a href="">
-					<figure>
-						<h3>Learn how to build a depression detector.</h3> 
-						<iframe  width="100%" height= "250px" src="https://www.youtube.com/embed/2Usivi731Eo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</figure>
-				</a>
-				<br>
-				<br>
+			<div class="col-sm-6" id="almendra-resources-posts">
+				<ul>
+					{% for post in site.categories.resources limit: page.r-plimit %}
+					<a href="{{ post.url }}" >
+						<li>
+							<p class="r-post-title"> {{ post.title }}</p>
+							<p class="r-post-date">{{ post.date | date: '%B %d, %Y' }} </p>
+						</li>
+					</a>
+					{% endfor %}
+				</ul>
 			</div>
 		</div>
-	</div>
+	</div> 
 	<a class="learn-more" href="./resources.html" > VIEW RESOURCES > </a>
 </section>
 
