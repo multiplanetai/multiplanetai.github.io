@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body{
-	background-color: #1B1B1B;
+	background-color: #0C0C0C; /*#1B1B1B;*/
 	padding: 25px 20px 0px 20px;
 	color: #F8F8F8;
 }
@@ -20,6 +20,7 @@ h1{
     text-align: left;
     padding-top: 10px;
 }
+
 
 section{
 	border-bottom: 1px solid  #934838;
