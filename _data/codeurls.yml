@@ -1,2 +1,5 @@
 - name: "Fully Convolutional Network Architecture written in PyTorch."
   url: "https://github.com/initiativealmendra/DL-architectures/blob/master/FCN.py"
+
+- name: "Siamese CNN model using PyTorch."
+  url: "https://github.com/initiativealmendra/DL-architectures/blob/master/SiameseCNN.py"
