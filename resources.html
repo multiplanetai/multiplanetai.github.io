@@ -39,7 +39,7 @@ title: Almendra | Resources
 		<div class="row" style="margin-right: 0px;">
 		{% for video in site.data.teachingvideos limit:3 %}
 			<div class="col-sm-4">
-				<iframe width="430" height="240" src="{{ video.url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+				<iframe class="almendra-r-video"  src="{{ video.url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
 			</div>
 		{% endfor %}
 		</div>
@@ -69,13 +69,6 @@ title: Almendra | Resources
         accessToken: '11713501771.4ca0031.1eab0a6fcf99434ea68a7796f386ffec',
         limit: 6,
         template: '<div class="col-sm-2"> <a href="\{\{link\}\}" target="_blank" rel="noopener"><img src="\{\{image\}\}" class="inst-img" /></a> </div>'
-
-        
     });
     feed.run();
 </script>
-<!--
-https://instagram.com/oauth/authorize/?client_id=4ca00311ac73450cad3e33959e733b77&redirect_uri=https://www.instagram.com/initiativealmendra/&response_type=token
-
-access_token=11713501771.4ca0031.1eab0a6fcf99434ea68a7796f386ffec
--->

@@ -50,11 +50,19 @@ h2{
   color:#f8f8f8;
 }
 
+
+.almendra-r-video{
+  width: 430px;
+  height: 240px;
+}
+
 .almendra-resources-videos-more{
   font: 15px/1.1 'Quicksand', sans-serif;
   text-align: center;
   padding-top: 20px;
 }
+
+
 
 .arvr{
   color: #0077be !important;
@@ -407,5 +415,46 @@ nav ul{
 
   #almendra-resources-code ul li{
     height: 60px;
+  }
+
+  .f-icon {
+    width: 2rem;
+  }
+/*
+  .almendra-r-video{
+    width: 285px;
+    height: 160px;
+  }*/
+}
+@media (max-width:374px) {
+  .almendra-r-video{
+    width: 285px;
+    height: 160px;
+  }
+}
+@media (min-width: 375px) and (max-width:424px) {
+  .almendra-r-video{
+    width: 335px;
+    height: 180px;
+  }
+}
+@media (min-width: 425px) and (max-width:767px) { /* TABLET */
+  .almendra-r-video{
+    width: 385px;
+    height: 210px;
+  }
+}
+@media (min-width: 768px) and (max-width:1023px) {
+  .almendra-r-video{
+    width: 240px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width:1025px){
+  /* Is the same as the default style */
+  .almendra-r-video{
+    width: 325px;
+    height: 190px;
   }
 }
