@@ -23,3 +23,6 @@ disqus: "https-betogaona7-github-io-blog"
 fid: "2010447859198340"
 
 permalink: /:categories/:year/:month/:day/:title
+
+paginate: 3
+

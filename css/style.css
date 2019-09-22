@@ -30,8 +30,42 @@ section{
 h2{
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 13px;
-	padding: 20px 0px 20px 0px;
+	  padding: 20px 0px 20px 0px;
 }
+
+
+
+.a-logo{
+    margin-right: -7px;
+    margin-top: -5px;
+    height: 40px;
+}
+
+.btn{
+  background-color: #0077be;
+  padding: .2rem .6rem;
+}
+
+.btn:hover{
+  color:#f8f8f8;
+}
+
+.almendra-resources-videos-more{
+  font: 15px/1.1 'Quicksand', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.arvr{
+  color: #0077be !important;
+  font-weight: bold;
+}
+
+.inst-img{
+  width: 100%;
+  height: auto;
+}
+
 
 .almendra-mission-br{
     font: 29px/1.1 'Quicksand', sans-serif;

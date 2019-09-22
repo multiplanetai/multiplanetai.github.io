@@ -1,5 +1,15 @@
-- name: "Fully Convolutional Network Architecture written in PyTorch."
+- name: "Fully Convolutional Network Architecture."
   url: "https://github.com/initiativealmendra/DL-architectures/blob/master/FCN.py"
+  video: "https://www.youtube.com/watch?v=uwTI4FgYP6U"
 
-- name: "Siamese CNN model using PyTorch."
+- name: "Siamese CNN Model."
   url: "https://github.com/initiativealmendra/DL-architectures/blob/master/SiameseCNN.py"
+  video: "https://www.youtube.com/watch?v=-3JvnEqPpoA"
+
+- name: "MobileNet Architecture."
+  url: "https://github.com/initiativealmendra/DL-architectures/blob/master/MobileNet.py"
+  video: "https://www.youtube.com/watch?v=Qx5zNiBXX_k"
+
+- name: "Attention Augmented Convolutional Neural Network."
+  url: "https://github.com/initiativealmendra/DL-architectures/blob/master/AA-CNN.py"
+  video: "https://www.youtube.com/watch?v=bJwYXdp_tEI"

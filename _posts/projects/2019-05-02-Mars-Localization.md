@@ -15,5 +15,3 @@ comments: false
 ---
 [in development]
 
-Project by [Nidhi Chandra](https://www.linkedin.com/in/nidhi-chandra-53575a85)  & [Alberto Gaona](https://www.linkedin.com/in/betogaona7/)
-

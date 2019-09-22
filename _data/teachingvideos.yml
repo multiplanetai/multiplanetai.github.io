@@ -1,0 +1,14 @@
+- name: "Group normalization"
+  url: "https://www.youtube.com/embed/61ykNjVOmiY"
+
+- name: "Depthwise separable convolution"
+  url: "https://www.youtube.com/embed/kSGhpsme2mo"
+
+- name: "Pooling layers and global average pooling"
+  url: "https://www.youtube.com/embed/vkVNhg3gWxU"
+
+- name: "Calculate CNN dimensionality"
+  url: "https://www.youtube.com/embed/f2S8-PBibAs"
+
+- name: "Hyperparameter optimization"
+  url: "https://www.youtube.com/embed/ZIia3jOuhso"
