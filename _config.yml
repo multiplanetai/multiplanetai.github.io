@@ -3,10 +3,14 @@
 
 title: Initiative Almendra
 tagline: Research
-description: Building AI for multiplanetary life
+description: Artificial intelligence open-research initiative for space exploration.
+logo: https://initiativealmendra.github.io/imgs/logo.png
 
 url: "https://initiativealmendra.github.io"
-
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  
 author:
   name: "Alberto Gaona"
   email: "albertoo_3c@hotmail.com"
